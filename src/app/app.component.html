@@ -1,0 +1,15 @@
+<header class="bg-secondary shadow-sm position-sticky p-2 mb-4">
+  <section class="container d-flex justify-content-between align-items-center">
+    <h4 class="m-0 text-white font-weight-lighter">Welcome to {{ title }}!</h4>
+    <nav>
+      <a routerLink="/dashboard" class="btn btn-secondary mr-2">Home</a>
+      <a routerLink="/heroes" class="btn btn-secondary">Heroes</a>
+    </nav>
+  </section>
+</header>
+
+<main class="container">
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</main>
+
